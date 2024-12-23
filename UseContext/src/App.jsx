@@ -1,14 +1,21 @@
 import './App.css'
-import Effect from './components/Effect'
-// import Task from './components/Task'
+import ComA from './components/ComA'
+import { createContext } from 'react'
+
+export const user = createContext()
 
 function App() {
 
-  return (
-    <Effect/>
-    // <Task/>
-  )
+  let users = 'Mitesh'
 
+  return (
+    <>
+    <user.Provider value={users}>
+      <h1 className="heading">This is React Pagination Components</h1>
+      <ComA/>
+    </user.Provider>
+    </>
+  )
 }
 
 export default App
