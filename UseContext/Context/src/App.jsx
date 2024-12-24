@@ -6,7 +6,7 @@ export const user = createContext()
 
 function App() {
 
-  let users = 'Mitesh'
+  let users = 'Divyesh'
 
   return (
     <>
