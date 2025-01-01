@@ -13,9 +13,9 @@ const Old = () => {
         <Navbar/>
         <Routes>
             <Route path="/" element={<Home/>}>Home</Route>
-            <Route path="/about" element={<About/>}>Home</Route>
-            <Route path="/cart" element={<Cart/>}>Home</Route>
-            <Route path="/faq" element={<Faq/>}></Route>
+            <Route path="/about" element={<About/>}>About</Route>
+            <Route path="/cart" element={<Cart/>}>Cart</Route>
+            <Route path="/faq" element={<Faq/>}>Faq</Route>
         </Routes>
       </BrowserRouter>
     </div>
