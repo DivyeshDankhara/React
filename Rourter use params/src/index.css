@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .heading{
+      @apply p-4 bg-blue-600 text-white text-center text-3xl
+    }
+    .btn{
+      @apply p-4 bg-blue-600 text-white text-center m-2 font-bold
+    }
+
+    .scrollright{
+      animation: right 1s linear;
+    }
+
+    @keyframes right{
+      0%{
+        transform: translatex(100%);
+      }
+      100%{
+        transform: translateX(0%);
+      }
+    }
+  }
