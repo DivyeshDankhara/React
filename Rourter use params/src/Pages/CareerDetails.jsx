@@ -3,9 +3,9 @@ import { useLoaderData, useParams } from 'react-router-dom'
 
 const CareerDetails = () => {
 
-  const { id } = useParams()
+    const {id} = useParams()
 
-  const career = useLoaderData()
+    const career = useLoaderData()
 
   return (
     <div>
@@ -18,14 +18,16 @@ const CareerDetails = () => {
   )
 }
 
-export const CareerDetailsData = async ({ params }) => {
-  // const { id } = params
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts/" + id)
+export const CareerDetailsData = async({params}) => {
+    const {id} = params
+    const res = await fetch("https://jsonplaceholder.typicode.com/posts/" + id)
 
-  if (!res.ok) {
-    throw Error('Data Not Available!!!!!!!')
-  }
-  return res.json()
+    if(!res.ok){
+        throw Error('Data Not Available!!!!!!!')
+    }
+    
+
+    return res.json()
 }
 
 export default CareerDetails
