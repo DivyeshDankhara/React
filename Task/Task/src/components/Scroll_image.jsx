@@ -18,7 +18,6 @@ const Scroll_image = () => {
   
   return (
     <div className="relative w-full max-w-lg mx-auto">
-
       <div
         ref={sliderRef}
         className="flex overflow-hidden rounded-lg shadow-md scroll-smooth"

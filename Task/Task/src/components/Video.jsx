@@ -11,10 +11,10 @@ const Video = () => {
     setPlay(!play)
 
     if(!play){
-      refbtn.current.play()
+      refbtn.current.pause()
     }
     else{
-      refbtn.current.pause()
+      refbtn.current.play()
     }
   }
 
