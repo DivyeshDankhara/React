@@ -37,11 +37,11 @@ const Counter = () => {
   return (
     <div className='bg-blue-400'>
         <p className='px-4 py-2 m-3 rounded-full w-fit text-center w-full'>{count}</p>
-        <button onClick={handleStart} className='p-1.5 bg-orange-200 m-2 border-2 border-solid border-black'>Start</button>
-        <button onClick={handlePause} className='p-1.5 bg-orange-200 m-2 border-2 border-solid border-black'>Pause</button>
-        <button onClick={handleReset} className='p-1.5 bg-orange-200 m-2 border-2 border-solid border-black'>Reset</button>
+        <button onClick={handleStart} className='p-1.5 bg-blue-200 m-2 border-2 border-solid border-black'>Start</button>
+        <button onClick={handlePause} className='p-1.5 bg-blue-200 m-2 border-2 border-solid border-black'>Pause</button>
+        <button onClick={handleReset} className='p-1.5 bg-blue-200 m-2 border-2 border-solid border-black'>Reset</button>
     </div>
   )
 }
 
-export default Counter
+export default Counter  
