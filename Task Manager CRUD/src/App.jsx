@@ -15,8 +15,8 @@ function App() {
   return (
     <>
     <TaskForm addData={setTaskData}/>
-    <TaskList/>
-    <TaskCard/>
+    <TaskList taskData={taskData}  setTaskData={setTaskData}/>
+    <TaskCard taskData={taskData}/>
     </>
   )
 

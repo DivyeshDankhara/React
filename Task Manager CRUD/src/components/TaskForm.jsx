@@ -32,9 +32,8 @@ const TaskForm = ({addData}) => {
             <input type="text" name="" id="" value={taskName} onChange={(e)=>setTaskName(e.target.value)} required/>
 
             <h1 className="text-lg">Description : </h1>
-            <input type="text" name="" id="" value={taskDescription} onChange={(e)=>setTaskDescription(e.target.value)} required/>
-
-            <br />
+            {/* <input type="text" name="" id="" value={taskDescription} onChange={(e)=>setTaskDescription(e.target.value)} required/> */}
+            <textarea name="" id="" value={taskDescription} onChange={(e)=>setTaskDescription(e.target.value)} required/>
 
             <div className="col-span-2 flex justify-center">
               <button className="bg-blue-600 px-4 py-2 border border-black rounded text-lg">
