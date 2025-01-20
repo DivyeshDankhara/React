@@ -9,7 +9,7 @@ const Navbar = () => {
             <ul className='flex justify-center space-x-3 text-white'>
                 <li><NavLink to="/">Home</NavLink></li>
                 <li><NavLink to="/cart">Cart</NavLink></li>
-                <li className='self-end'><NavLink to="/whishlist">Whishlist</NavLink></li>
+                <li><NavLink to="/whishlist">Whishlist</NavLink></li>
             </ul>
         </nav>
       </div>
