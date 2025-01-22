@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .heading{
+      @apply p-4 bg-gray-500 text-black text-center text-3xl
+    }
+    .green{
+      @apply p-4 bg-green-500 text-black text-center m-2 font-bold
+    }
+    .green1{
+      @apply p-4 bg-green-300 text-black text-center m-2 font-bold
+    }
+    .btn{
+      @apply p-4 bg-gray-500 text-black text-center m-2 font-bold
+    }
+  }
