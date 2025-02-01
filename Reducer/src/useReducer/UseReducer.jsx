@@ -1,17 +1,32 @@
 import React, { useReducer } from 'react'
 
-const initialstate = [{ cake: 10, book: 50 }]
+const initialstate = { cake: 10, book: 50 }
+// const initialstate = [{ cake: 10, book: 50 }]
+
+// const reducer = (state, action) => {
+//   switch (action.type) {
+//     case "INCREMENTCAKE":
+//       return [{ ...state[0], cake: state[0].cake + 1 }];
+//     case "DECREMENTCAKE":
+//       return [{ ...state[0], cake: state[0].cake - 1 }];
+//     case "INCREMENTBOOK":
+//       return [{ ...state[0], book: state[0].book + 1 }];
+//     case "DECREMENTBOOK":
+//       return [{ ...state[0], book: state[0].book - 1 }];
+//     default: return state
+//   }
+// }
 
 const reducer = (state, action) => {
   switch (action.type) {
     case "INCREMENTCAKE":
-      return [{ ...state[0], cake: state[0].cake + 1 }];
+      return { ...state, cake: state.cake + 1 };
     case "DECREMENTCAKE":
-      return [{ ...state[0], cake: state[0].cake - 1 }];
+      return { ...state, cake: state.cake - 1 };
     case "INCREMENTBOOK":
-      return [{ ...state[0], book: state[0].book + 1 }];
+      return { ...state, book: state.book + 1 };
     case "DECREMENTBOOK":
-      return [{ ...state[0], book: state[0].book - 1 }];
+      return { ...state, book: state.book - 1 };
     default: return state
   }
 }
@@ -28,7 +43,7 @@ const UseReducer = () => {
         <h1 className='heading'>This is UseReducer Hook in reactJS</h1>
         {/* <p className='btn'>{state[0].cake}</p>
         <p className='btn'>{state[0].book}</p> */}
-        {
+        {/* {
           state.map((item,index)=>{
             return(
                 <ul key={index}>
@@ -37,7 +52,11 @@ const UseReducer = () => {
                 </ul>
             )
           })
-        }
+        } */}
+        <ul>
+                  <li className='btn'>cake:{state.cake}</li>
+                  <li className='btn'>book:{state.book}</li>
+                </ul>
       </div>
       <button className='btn' onClick={() => dispatch({ type: "INCREMENTCAKE" })}>Increment</button>
       <button className='btn' onClick={() => dispatch({ type: "DECREMENTCAKE" })}>Decrement</button>
