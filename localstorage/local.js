@@ -1,29 +1,40 @@
+// local Storage 
 
-
-// function setData(){
-//   let Profile = {
-//     firstName:'Jack',
-//     lastName:'Rayan',
-//     age:45
-//   }
-
-//   let string = JSON.stringify(Profile)
-
-//   localStorage.setItem('username' , string)
-//   localStorage.setItem('password' , '1234567890')
+// function setData() {
+//   localStorage.setItem("username","divyesh");
+//   localStorage.setItem("age","21");
 // }
 
-// function getData(){
-//   let data= localStorage.getItem('username')
+// function getData() {
+//   let data = localStorage.getItem("username","divyesh");
 //   document.getElementById('output').innerHTML = data
 // }
 
-// function removeData(){
-//   localStorage.removeItem('username')
+// function removeData() {
+//   localStorage.removeItem("username","divyesh");
 // }
 
-function setSession(){
-  sessionStorage.setItem('username' , 'jack')
+// function clearData() {
+//   localStorage.clear("username","divyesh");
+// }
+
+
+// Session 
+
+function setData() {
+  sessionStorage.setItem("username","divyesh");
+  sessionStorage.setItem("age","21");
 }
 
+function getData() {
+  let data = sessionStorage.getItem("username","divyesh");
+  document.getElementById('output').innerHTML = data
+}
 
+function removeData() {
+    sessionStorage.removeItem("username","divyesh");
+}
+
+function clearData() {
+    sessionStorage.clear("username","divyesh");
+}
