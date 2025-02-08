@@ -54,9 +54,9 @@ const UseReducer = () => {
           })
         } */}
         <ul>
-                  <li className='btn'>cake:{state.cake}</li>
-                  <li className='btn'>book:{state.book}</li>
-                </ul>
+          <li className='btn'>cake:{state.cake}</li>
+          <li className='btn'>book:{state.book}</li>
+        </ul>
       </div>
       <button className='btn' onClick={() => dispatch({ type: "INCREMENTCAKE" })}>Increment</button>
       <button className='btn' onClick={() => dispatch({ type: "DECREMENTCAKE" })}>Decrement</button>
