@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@layer component{
+  .headtext{
+    @apply text-2xl text-white bg-purple-700 font-black p-6 text-center
+  }
+  .semitext{
+    @apply text-xl text-white bg-green-700 font-black p-6 text-center
+  }
+  .btn{
+    @apply px-8 py-2 bg-green-600 text-white border-solid border-2 border-green-900
+  }
+}
+

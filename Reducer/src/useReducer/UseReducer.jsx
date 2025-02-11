@@ -43,7 +43,7 @@ const UseReducer = () => {
         <h1 className='heading'>This is UseReducer Hook in reactJS</h1>
         {/* <p className='btn'>{state[0].cake}</p>
         <p className='btn'>{state[0].book}</p> */}
-        {/* {
+        {
           state.map((item,index)=>{
             return(
                 <ul key={index}>
@@ -52,11 +52,11 @@ const UseReducer = () => {
                 </ul>
             )
           })
-        } */}
-        <ul>
+        }
+        {/* <ul>
           <li className='btn'>cake:{state.cake}</li>
           <li className='btn'>book:{state.book}</li>
-        </ul>
+        </ul> */}
       </div>
       <button className='btn' onClick={() => dispatch({ type: "INCREMENTCAKE" })}>Increment</button>
       <button className='btn' onClick={() => dispatch({ type: "DECREMENTCAKE" })}>Decrement</button>
