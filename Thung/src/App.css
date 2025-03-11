@@ -1,0 +1,23 @@
+h1{
+    text-decoration: underline;
+}
+
+/*   Bootstrap Breakpoint */
+
+/*
+
+xs: 0 to 575
+sm: 576 to 767
+md: 768 to 991
+lg: 992 to 1199
+xl: 1200 to 1399
+xxl: 1400 
+
+xs: < 575
+sm: >= 576
+md: >= 768
+lg: >= 992
+xl: >= 1200
+xxl: >= 1400
+
+*/

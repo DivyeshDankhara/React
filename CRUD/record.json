@@ -1,0 +1,32 @@
+{
+  "Record": [
+    {
+      "id": "d905",
+      "name": "Abhishek",
+      "email": "skillabhi026@gmail.com",
+      "contact": "9988776655",
+      "address": "surat"
+    },
+    {
+      "id": "61b0",
+      "name": "Diya",
+      "email": "duyaLj34@gmail.com",
+      "contact": "1122334455",
+      "address": "Ahmdabad"
+    },
+    {
+      "id": "cff8",
+      "name": "ayush",
+      "email": "ayushshah@gmail.com",
+      "contact": "3322447766",
+      "address": "ahmdabas,bopal"
+    },
+    {
+      "id": "b223",
+      "name": "Ronit",
+      "email": "RonitShah11@gamil.com",
+      "contact": "6587940031",
+      "address": "Ahmdabad , Bapunagar"
+    }
+  ]
+}
