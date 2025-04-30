@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .HeroSlider .slick-dots {
+        position: absolute;
+        /* color: red; */
+        bottom: 25px;
+    }
+
+    .HeroSlider .slick-dots .slick-active {
+        background-color: rgb(212, 209, 209);
+        border-radius: 50%;
+    }
+
+    .shopslider .slick-dots {
+      position: absolute;
+      bottom: 10px;
+    }
+
+    .shopslider .slick-dots .slick-active {
+      background-color: rgb(212, 209, 209);
+      border-radius: 50%;
+    }
+
+    .Happyclient .slick-dots {
+      
+    }
+
+    .Happyclient .slick-dots .slick-active {
+      background-color: rgb(212, 209, 209);
+      border-radius: 50%;
+    }
+
+    .Happyclient_logo .slick-dots {
+      
+    }
+
+    .Happyclient_logo .slick-dots .slick-active {
+      background-color: rgb(212, 209, 209);
+      border-radius: 50%;
+    }
+
+    /* .Shopgram .slick-dots {
+      position: absolute;
+      bottom: 10px;
+    } */
+
+    .Shopgram .slick-dots .slick-active {
+      background-color: rgb(212, 209, 209);
+      border-radius: 50%;
+    }
+
+    .Marqu {
+        animation: marquees 30s linear infinite;
+    }
+
+    @keyframes marquees {
+
+        0% {
+          transform: translateX(0%);
+        }
+    
+        100% {
+    
+          transform: translateX(-100%);
+        }
+      }
+
+      .MarquSlider:hover>div {
+        animation-play-state: paused;
+      }
+}
+
+
+
